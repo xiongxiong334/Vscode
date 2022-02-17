@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../练习/fontawesome/css/all.css">
+    <style>
+        .clearfix::before,
+        .clearfix::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+        body{      
+          background-color: #fff;
+          font: 12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;
+          color: #999;
+        }
+        .top-bar-wapper{
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            background-color: #e3e4e5;
+            border-bottom: 1px #ddd solid;
+        }
+
+        .top-bar{
+            width: 1190px;
+            margin: 0 auto;
+            position: relative;
+           
+           
+        }
+        .location{
+            float: left;
+        }
+       .location .city-list{
+           display: none;
+            width: 320px;
+            height: 436px;
+            background-color: white;
+            border: 1px solid rgb(204, 204, 204);
+            position: absolute;
+            top: 31px;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.493);
+            z-index: 999;
+        }
+        .short-cut .personal{
+            display: none;
+          width: 350px;
+          height: 200px;
+          background-color: white;
+            border: 1px solid rgb(204, 204, 204);
+            position: absolute;
+            top: 31px;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.493);
+            z-index: 999;
+          
+      }
+  .location:hover .city-list{
+      display: block;
+  }
+  .individual-account:hover .personal{
+      display: block;
+    }
+  .current-city{
+      padding: 0 10px;
+       border: 1px solid transparent;
+      border-bottom: none;
+      position: relative;
+      z-index: 9999;  
+  }
+  .personal{
+      padding: 0 10px;
+       border: 1px solid transparent;
+      border-bottom: none;
+      position: relative;
+      z-index: 9999;
+
+  }
+  .location:hover .current-city{
+      background-color: white;
+    border: 1px solid rgb(204, 204, 204);
+      border-bottom: none;
+      padding-bottom: 1px;
+  }
+  .individual-account:hover {
+    background-color: white;
+    border: 1px solid rgb(204, 204, 204);
+      border-bottom: none;
+      padding-bottom: 1px;
+  }
+ 
+ 
+        .short-cut {
+            float: right;
+        }
+        .short-cut li {
+            float: left;
+           
+        }
+        .top-bar a,
+        .top-bar span,
+        .top-bar i{
+            color: #999;
+            text-decoration: none;
+        }
+        .top-bar a:hover,
+        .top-bar a.highlight{
+            color: #f10215;
+        }
+        .location .fas{
+            color: #f10215;
+        }
+      .short-cut .line{
+          width: 1px;
+          height: 10px;
+          background-color: #999 ;
+          margin: 12px 12px 0px;    
+      }
+ 
+     
+      
+     
+  .city-list li>a{
+     
+      width: 50px;
+      height: 25px;
+      float: left;
+      text-align: justify;
+      margin-left: 10px;
+     
+  }
+    .line2 {
+      width: 80%;
+      height: 1px;
+     
+      background-color: #bfa;
+  }
+  .city-list li>a:hover{
+      background-color: rgb(204, 204, 204);
+      border-radius: 3px;
+  }
+  .box5{
+      margin-left: 10px;
+  }
+  .box6 li{
+      float: left;
+      margin-left: 10px;
+  }
+  .box6 :nth-child(2){
+      margin-left: 100px;
+  }
+  
+    </style>
+</head>
+<body>
+    <div class="top-bar-wapper">
+        <div class="top-bar clearfix">
+            <div class="location">
+                <div class="current-city">
+                 <i class="fas fa-map-marker-alt" href="#"></i>
+                <a href="#">北京</a>
+                </div>
+               <div class="city-list">
+                <ul>
+                    <li >
+                     <a href="#">北京</a>
+                     <a href="#">上海</a>
+                     <a href="#">天津</a>
+                     <a href="#">重庆</a>
+                     <a href="#">河北</a>
+                   
+                        <a href="#">山西</a>
+                        <a href="#">河南</a>
+                        <a href="#">辽宁</a>
+                        <a href="#">吉林</a>
+                        <a href="#">黑龙江</a>
+                    
+                        <a href="#">内蒙古</a>
+                        <a href="#">江苏</a>
+                        <a href="#">山东</a>
+                        <a href="#">安徽</a>
+                        <a href="#">浙江</a>
+                    
+                        <a href="#">福建</a>
+                        <a href="#">湖北</a>
+                        <a href="#">湖南</a>
+                        <a href="#">广东</a>
+                        <a href="#">广西</a>
+                    
+                        <a href="#">江西</a>
+                        <a href="#">四川</a>
+                        <a href="#">海南</a>
+                        <a href="#">贵州</a>
+                        <a href="#">云南</a>
+                    
+                        <a href="#">西藏</a>
+                        <a href="#">陕西</a>
+                        <a href="#">甘肃</a>
+                        <a href="#">青海</a>
+                        <a href="#">宁夏</a>
+                    
+                    
+                        <a href="#">新疆</a>
+                        <a href="#">港澳</a>
+                        <a href="#">台湾</a>
+                        <a href="#">钓鱼岛</a>
+                        <a href="#">海外</a>
+                    </li> 
+                    <li class="box5 clearfix">    _________________________________________________</li>
+                    <li class="box5 clearfix" >地区专享版本</li>
+                    <ul class="box6 clearfix" >
+                        <li>
+                            中国港澳
+                        </li>
+                        <li>
+                        中国台湾
+                    </li></ul>
+                    
+                    <li class="box5 clearfix" >京东全球</li>
+                  
+                 </ul>
+                  
+               </div>
+            </div>
+         <ul class="short-cut clearfix">
+            <li><a href="#">你好,请登录 </a></li> 
+             <li><a class="highlight" href="#"> 免费注册</a></li>
+             <li class="line"></li>
+             <li><a href="#">我的订单</a></li>
+             <li class="line"></li>
+             <li class="individual-account"> <a href="#">我的京东</a>
+                <div class="personal">
+                </div></li>
+             <li><i class="fas fa-angle-down"></i></li>
+             <li class="line"></li>
+             <li ><a href="#">京东会员</a>
+            </li>
+             <li class="line"></li>
+             <li><a class="highlight" href="#">企业采购</a></li>
+            <li> <i class="fas fa-angle-down"></i></li>
+             <li class="line"></li>
+             <li><a href="#">企业采购</a></li>
+            <li><i class="fas fa-angle-down"></i></li> 
+             <li class="line"></li>
+            <li> <span>客户服务</span></li>
+            <li> <i class="fas fa-angle-down"></i></li>
+             <li class="line"></li>
+            <li> <span>网站导航</span></li>
+           <li>  <i class="fas fa-angle-down"></i></li>
+             <li class="line"></li>
+          <li><span>手机京东</span></li>
+             <li class="line"></li>
+           <li>  <span>网站无障碍</span></li>
+             
+        </ul>
+        </ul>
+        
+       
+        </div>
+    </div>
+</body>
+</html>
